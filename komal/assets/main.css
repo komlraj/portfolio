@@ -343,6 +343,14 @@ h2 {
     media query
     ================================  */
 
+@media (min-width: 2500px) {
+  .wrapper{
+    max-width: 2400px;
+    width: 100%;
+    margin: 0 auto;
+  }
+}
+
 @media screen and (max-width: 1000px) {
     .menu-list{
       display: none;
