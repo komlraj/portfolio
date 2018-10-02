@@ -161,7 +161,6 @@ h2 {
 	justify-content: space-around;
 }
 .list {
-	display: block;
 	padding: .5rem 0;
 	line-height: 1.4rem;
 }
@@ -235,7 +234,7 @@ h2 {
 }
 
 /*  =================================================
-            Work
+            Blog
     =================================================  */
 
 .blog {
@@ -312,8 +311,10 @@ h2 {
   font-size: 2rem;
   padding: 0 .5rem;
 }
-
-
+.about-nav-list i:hover {
+  transform: scale(1.2);
+  transition: transform .5s;
+}
 
 
 
@@ -374,7 +375,6 @@ h2 {
 }
 
 @media screen and (max-width: 760px) {
-
   .logo-item{
     width: 180px;
     margin-top: 40px;
@@ -382,4 +382,27 @@ h2 {
   .logo{
     padding-bottom: 15px;
   }
- }
+  .education_detail {
+    display: grid;
+    grid-template-columns: 1fr;
+    text-align: center;
+  }
+  .work-gallery,
+  .follow-menu,
+  .contact-form_wrapper {
+    display: grid;
+    grid-template-columns: 1fr;
+  }
+  .follow-menu {
+    grid-gap : 30px;
+  }
+}
+
+@media screen and (max-width:860px) {
+  .skill-list {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+}
+
