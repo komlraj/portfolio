@@ -54,7 +54,11 @@ h2 {
     margin-top: 4rem;
     color: #201E1E;
 }
-
+.logo {
+	font-size: 26px;
+	padding-bottom: 23px;
+	color: #fff;
+}
 
 /*  =================================================
             Header
@@ -71,7 +75,14 @@ h2 {
 .header-user-name {
 	font-size: 2.5rem;
 	letter-spacing: .15rem;
-	word-spacing: .2rem;
+  word-spacing: .2rem;
+  cursor: pointer;
+}
+.header-user-name a {
+  color: white;
+}
+.header-user-name a:hover {
+  color: rgba(224, 222, 193, 0.8);
 }
 .nav-bar {
 	padding-top: 10px;
@@ -115,48 +126,20 @@ h2 {
   background-size: cover;
 }
 .home-hero {
+  position: relative;
   height: 80vh;
   background: #281e2e;
-  opacity: 0.7;
-}
-.home-logos {
-	padding: 3rem 0;
-  display: flex;
-  justify-content: space-around;
-  flex-wrap: wrap;
-}
-.logo {
-	font-size: 26px;
-	padding-bottom: 23px;
-	color: #fff;
-}
-.logo-name a {
-	font-size: 28px;
-	font-weight: 700;
-	color: #fff;
-}
-.home-table {
-	width: 65%;
-	margin: 0 auto;
-}
-.logo-item {
-  text-align: center;
-}
-.logo-item a:hover {
-  color: #39a366;
-}
-.logo-item i:hover {
-  transform: scale(1.2);
-  transition: transform .5s;
+  opacity: 0.4;
 }
 .home-data {
+  color: rgb(255, 255, 255);
+  display : inline-block;
   padding-top: 100px;
   padding-left: 40px;
   width: 600px;
   text-align: center;
 }
 .home-user-name {
-  color: white;
   font-size: 5rem;
   font-weight: 600;
   letter-spacing: .15rem;
@@ -165,7 +148,32 @@ h2 {
   margin-top: 20px;
   line-height: 2.2rem;
   font-size: 2rem;
-  color: white;
+}
+
+ /* copy */
+
+ .myCanvas {
+  position: absolute;
+  height: 80vh;
+  width: 100%;
+}
+.home-hero-copy {
+  position: relative;
+  height: 80vh;
+  background: #e8e3eb;
+}
+.home-img-kml {
+  display: inline-block;
+  float: right;
+  margin-top : 80px;
+  margin-right: 100px;
+}
+.home-img-kml img {
+  height: 300px;
+  border-radius: 50%;
+}
+.home-data-copy {
+  color: #76569b;
 }
 
 /*  =================================================
@@ -249,7 +257,11 @@ h2 {
 .work_album {
   padding:2px;
   background:rgba(192, 242,255,0.2);
-  box-shadow:1px 1px 5px rgba(0,0,0,0.1);
+  box-shadow:1px 1px 5px 0 black;
+}
+.work_album:hover .work__image{
+  transform: scale(1.05);
+  transition: transform 1.5s ease-in-out ;
 }
 .work__image {
   height:25rem;
@@ -433,6 +445,17 @@ h2 {
   }
   .follow-menu {
     grid-gap : 30px;
+  }
+  .home-data {
+    max-width: 400px;
+    width: auto;
+    margin: 0 auto;
+    padding-top: 50px;
+  }
+  .home-user-name {
+    font-size: 3.5rem;
+    font-weight: 500;
+    letter-spacing: .15rem;
   }
 }
 
